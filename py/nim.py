@@ -21,7 +21,8 @@ while(stones != 0):
     print("There are", stones, "stones remaining.\n")
     if (stones == 0):
         print("Player wins!")
-    
+        break
+        
     computer_choice = random.randint(1,3)
     while(computer_choice > stones):
         computer_choice -= 1 
